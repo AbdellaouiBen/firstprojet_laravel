@@ -19,8 +19,8 @@ class CreatePersonnesTable extends Migration
             $table->char('Prenom',80);
             $table->char('Email',255);
             $table->date('Date_de_naissance');
-            $table->smallInteger('Numero_de_telephone');
-            $table->boolean('inscrit');
+            $table->integer('Numero_de_telephone'); 
+            $table->boolean('inscrit'); 
             $table->longText('Description');
             $table->timestamps();
         });
