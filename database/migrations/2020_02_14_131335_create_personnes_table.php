@@ -18,10 +18,10 @@ class CreatePersonnesTable extends Migration
             $table->char('Nom',80);
             $table->char('Prenom',80);
             $table->char('Email',255);
-            $table->date('Date_de_naissance',320);
-            $table->char('Numero_de_telephone',50);
+            $table->date('Date_de_naissance');
+            $table->smallInteger('Numero_de_telephone');
             $table->boolean('inscrit');
-            $table->text('Description'  );
+            $table->longText('Description');
             $table->timestamps();
         });
     }
